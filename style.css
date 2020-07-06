@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-size: 15pt;
+    width: 100%;
+    background-color: #efefef;
+}
+header{
+  background-color: #121212;
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  color: #fff;
+}
+header h1{
+  width: 200px;
+  background-color: purple;
+  padding: 5px;
+  margin: 0 auto;
+  align-self: center;
+  justify-content: start;
+}
+header .menu .menu__menu{
+  display: flex;
+  list-style-type: none;
+}
+header .menu .menu__menu li{
+  color:#fff.;
+  margin: 5px;
+  padding: 5px;
+  background-color: #00ccff;
+  text-decoration: none;
+}
+
+header .menu .menu__menu .categorias__menu li {
+  display: none;
+}
