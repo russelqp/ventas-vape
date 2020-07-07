@@ -14,14 +14,13 @@ header{
   display: flex;
   margin: 0 auto;
   color: #fff;
+  justify-content: space-between;
 }
 header h1{
   width: 200px;
   background-color: purple;
   padding: 5px;
-  margin: 0 auto;
-  align-self: center;
-  justify-content: start;
+  text-align: center;
 }
 header .menu .menu__menu{
   display: flex;
