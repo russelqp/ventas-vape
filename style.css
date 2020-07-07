@@ -9,7 +9,7 @@ body {
 }
 header{
   background-color: #121212;
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   display: flex;
   margin: 0 auto;
@@ -36,4 +36,14 @@ header .menu .menu__menu li{
 
 header .menu .menu__menu .categorias__menu li {
   display: none;
+}
+#container{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+footer{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
 }
