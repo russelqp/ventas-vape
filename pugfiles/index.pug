@@ -1,0 +1,55 @@
+-//Variables para metadatos de la págiana actual
+-var meta_titlePage ="Vape Zone - Home";
+
+<!DOCTYPE html>
+html(lang="en")
+head
+  include inc/head.pug
+
+body
+  header.cabecera
+    h1 Ventas Vape
+    nav.menu
+      ul.menu__menu
+        li.menu__menu_nosotros Catálogo
+        li.menu__menu_categorias Nosotros
+          ul.menu__menu_categorias
+            li.menu__categorias_cigarros Cigarros
+            li.menu__categorias_liquidos Liquidos
+            li.menu__categorias_resistencias Resitencias
+            li.menu__categorias_merchandacing Merchandacing
+            li.menu__categorias_refacciones Refacciones
+            li.menu__categorias_novedades Novedades
+        li.menu__menu_faq Faq
+        li.menu__menu_contacto Contacto
+
+  main
+    .slider
+      ul
+        li
+          img(src="images/wireframes/banner01.jpg")
+        li
+          img(src="images/wireframes/banner01.jpg")
+        li
+          img(src="images/wireframes/banner01.jpg")
+        li
+          img(src="images/wireframes/banner01.jpg")
+
+
+    section.welcome
+      article
+        img(src="images/producto_1" alt="Cigarro electronico")
+        h2 Los mejores cigarros
+        p Tenemos los productos para que disfrutes de gratos momentos.
+      article
+        img(src="images/producto_2" alt="Cigarro electronico")
+        h2 Los mejores cigarros
+        p enemos los productos para que disfrutes de gratos momentos.
+      article
+        img(src="images/producto_3" alt="Cigarro electronico")
+        h2 Los mejores cigarros
+        p Tenemos los productos para que disfrutes de gratos momentos.
+  footer
+    span &copy; Ventasvape.com
+
+  script(src="main.js")
