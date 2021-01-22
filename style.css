@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-size: 15pt;
+    width: 100%;
+    background-color: #efefef;
+}
+header{
+  background-color: #121212;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  color: #fff;
+  justify-content: space-between;
+}
+header h1{
+  width: 200px;
+  background-color: purple;
+  padding: 5px;
+  text-align: center;
+}
+header .menu .menu__menu{
+  display: flex;
+  list-style-type: none;
+}
+header .menu .menu__menu li{
+  color:#fff;
+  margin: 5px;
+  padding: 5px;
+  background-color: #00ccff;
+  text-decoration: none;
+}
+
+header .menu .menu__menu .categorias__menu li {
+  display: none;
+}
+#container{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+footer{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
