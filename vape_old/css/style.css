@@ -1,0 +1,229 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?p6f6ko");
+  src: url("fonts/icomoon.eot?p6f6ko#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?p6f6ko") format("truetype"), url("fonts/icomoon.woff?p6f6ko") format("woff"), url("fonts/icomoon.svg?p6f6ko#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-shopping-cart:before {
+  content: "\e900"; }
+
+.icon-home3:before {
+  content: "\e902"; }
+
+.icon-image:before {
+  content: "\e90d"; }
+
+.icon-pacman:before {
+  content: "\e916"; }
+
+.icon-bell:before {
+  content: "\e951"; }
+
+.icon-user:before {
+  content: "\e971"; }
+
+.icon-search:before {
+  content: "\e986"; }
+
+.icon-mug:before {
+  content: "\e9a2"; }
+
+.icon-bin2:before {
+  content: "\e9ad"; }
+
+.icon-menu:before {
+  content: "\e9bd"; }
+
+.icon-star-empty:before {
+  content: "\e9d7"; }
+
+.icon-star-half:before {
+  content: "\e9d8"; }
+
+.icon-star-full:before {
+  content: "\e9d9"; }
+
+.icon-heart:before {
+  content: "\e9da"; }
+
+.icon-cross:before {
+  content: "\ea0f"; }
+
+.icon-checkmark:before {
+  content: "\ea10"; }
+
+.icon-arrow-up:before {
+  content: "\ea32"; }
+
+.icon-arrow-right:before {
+  content: "\ea34"; }
+
+.icon-arrow-down:before {
+  content: "\ea36"; }
+
+.icon-arrow-left:before {
+  content: "\ea38"; }
+
+.icon-mail:before {
+  content: "\ea83"; }
+
+.icon-facebook2:before {
+  content: "\ea91"; }
+
+.icon-instagram:before {
+  content: "\ea92"; }
+
+.icon-whatsapp:before {
+  content: "\ea93"; }
+
+.icon-youtube:before {
+  content: "\ea9d"; }
+
+.icon-youtube2:before {
+  content: "\ea9e"; }
+
+.icon-paypal:before {
+  content: "\ead8"; }
+
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  align-items: center; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 15pt;
+  width: 100%;
+  background-color: #efefef;
+  font-family: monospace; }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px; }
+
+header {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  color: #212121; }
+
+.barra_uno {
+  background-color: #f1f1f1;
+  display: grid;
+  grid-template-columns: 250px auto 50px 50px;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+.buscador {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 600px 50px;
+  grid-column-gap: 10px; }
+  .buscador .buscador__barra {
+    width: 100%; }
+    .buscador .buscador__barra input {
+      border-radius: 20px;
+      background-color: initial;
+      height: 40px;
+      width: 100%;
+      border-color: #7eddf2; }
+  .buscador .buscador__btn {
+    color: #fff;
+    width: 50px;
+    height: 40px; }
+
+.logo {
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.contener_nav_menu {
+  width: 100%;
+  background-color: #212121; }
+
+.menu {
+  display: grid;
+  margin: auto;
+  max-width: 1200px;
+  grid-template-columns: 25px auto;
+  color: #f1f1f1; }
+  .menu i {
+    width: 20px; }
+
+.menu__menu {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: repeat(4, auto);
+  align-content: center;
+  align-items: center; }
+
+.menu__menu li {
+  margin: 5px;
+  padding: 5px;
+  text-decoration: none;
+  max-width: 250px;
+  text-align: center; }
+
+.menu__menu_categorias ul {
+  display: none; }
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 25px; }
+
+.welcome {
+  display: grid;
+  grid-template-rows: auto auto; }
+
+.welcome h2 {
+  grid-column: 1/4; }
+
+.welcome article {
+  padding: 20px;
+  background-color: #f1f1f1; }
+
+.hero_slider {
+  width: 100%;
+  height: 100%;
+  background-color: #ada9a9; }
+
+.slider {
+  max-width: 1920px;
+  height: 581px;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.slider ul {
+  width: 100%; }
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px; }

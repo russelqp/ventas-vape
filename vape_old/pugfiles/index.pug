@@ -1,0 +1,76 @@
+-//Variables para metadatos de la págiana actual
+-var meta_titlePage ="Vape Zone - Home";
+
+<!DOCTYPE html>
+html(lang="en")
+head
+  include inc/head.pug
+
+body
+  header.cabecera
+    .barra_uno
+      .logo
+        span
+          img(src="images/logo100.png", alt="")
+        h1 Vape Soul
+      .buscador
+        .buscador__barra
+          form(action="" method="post" target="_self")
+            input(type="search" name="" placeholder="")
+        .buscador__btn
+         input(type="submit" value="Buscar").icon-search
+      span.login
+        i.icon-user
+      span.carrito
+        i.icon-shopping-cart
+
+    .contener_nav_menu
+      nav.menu
+        i.icon-menu
+        ul.menu__menu
+          li.menu__menu_nosotros Catálogo
+          li.menu__menu_categorias Nosotros
+            ul.menu__menu_categorias
+              li.menu__categorias_cigarros Cigarros
+              li.menu__categorias_liquidos Liquidos
+              li.menu__categorias_resistencias Resitencias
+              li.menu__categorias_merchandacing Merchandacing
+              li.menu__categorias_refacciones Refacciones
+              li.menu__categorias_novedades Novedades
+          li.menu__menu_faq Faq
+          li.menu__menu_contacto Contacto
+
+    .hero_slider
+      .slider
+        ul
+          li
+            img(src="images/banners/banner01.jpg")
+          li
+            img(src="images/banners/banner02.jpg")
+          li
+            img(src="images/banners/banner03.jpg")
+          li
+            img(src="images/banners/banner04.jpg")
+
+  main
+    section.welcome
+      h2 Los mejores productos
+      article
+        h3 Equipos desechables
+        figure
+          img(src="images/wireframes/cuadro400.jpg" alt="Cigarro electronico")
+          figcaption Tenemos los productos para que disfrutes de gratos momentos.
+      article
+        h3 Pod Mods
+        figure
+          img(src="images/wireframes/cuadro400.jpg" alt="Cigarro electronico")
+          figcaption Tenemos los productos para que disfrutes de gratos momentos.
+      article
+        h3 Starter Kits
+        figure
+          img(src="images/wireframes/cuadro400.jpg" alt="Cigarro electronico")
+          figcaption Tenemos los productos para que disfrutes de gratos momentos.
+  footer
+    span &copy; Ventasvape.com
+
+  script(src="main.js")

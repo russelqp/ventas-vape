@@ -1,0 +1,26 @@
+{
+  "name": "ventas-vape",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "purge": "purgecss --css css/custom.css --content index.html -o css/reducido.css",
+    "postcss": "postcss css/tailwind.css -o public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/russelqp/ventas-vape.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/russelqp/ventas-vape/issues"
+  },
+  "homepage": "https://github.com/russelqp/ventas-vape#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "bootstrap": "^5.0.0-beta2",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.3"
+  }
+}
