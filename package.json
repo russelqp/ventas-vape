@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "purge": "purgecss --css css/custom.css --content index.html -o css/reducido.css",
+    "purge": "purgecss --css public/css/style.css --content public/index.html -o public/css/reducido.css",
     "postcss": "postcss css/tailwind.css -o public/css/style.css"
   },
   "repository": {
