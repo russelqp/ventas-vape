@@ -1,0 +1,10 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.contener_nav {
+  background-color: #ccc;
+}

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "purge": "purgecss --css public/css/style.css --content public/index.html -o public/css/reducido.css",
-    "postcss": "postcss css/tailwind.css -o public/css/style.css"
+    "postcss": "postcss css/tailwind.css -o css/style.css"
   },
   "repository": {
     "type": "git",
