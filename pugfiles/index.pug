@@ -24,30 +24,32 @@ html(lang="es")
 body
     .py-1.flex.w-full.border-t-2.border-red-400.border-b-2.border-red-400.justify-center.text-center
       span #[strong Advertencia]: Este producto contiene nicotina. La nicotina es un producto quimico adictivo.
-    header.flex.w-full.flex-wrap
+    header.flex.w-full.flex-wrap.relative
         .flex.w-full.justify-center.bg-gray-50
             .w-full.grid.grid-cols-3.grid-rows-2.max-w-screen-xl.py-4.justify-center.place-items-center(class="md:grid-cols-5 md:grid-rows-1")
                 .burger-menu.w-full(x-data="{ open:false }").col-start-1.col-end-2
-                    button.icon-menu.px-4.py-2.font-bold(@click="open = true" class="md:hidden").cursor-pointer
-                    ul.absolute.z-10.top-0.left-8.mt-2.p-2.text-sm(x-show = "open" @click.away="open = false")
-                      li.bg-blue-200
-                        a.px-2.py-1(class='hover:bg-blue-200' href="#categorias") Categorias
-                      li.bg-blue-200
-                        a.px-2.py-1(class='hover:bg-blue-200' href="#newarrivals") New Arrivals
-                      li.bg-blue-200
-                        a.px-2.py-1(class='hover:bg-blue-200' href="#disposible") Disposible Devices 
-                      li.bg-blue-200
-                        a.px-2.py-1(class='hover:bg-blue-200' href="#giveaway") Giveaway&amp;Sales
+                    button.icon-menu.px-4.py-2.font-bold(@click="open = !open" class="md:hidden").cursor-pointer
+                    button.icon-cross.px-4.py-2.font-bold(class="md:hidden" x-show.transition = "open" @click.away="open = false").cursor-pointer
+
+                    ul.w-screen.p-1.absolute.z-50.mt-2.text-sm.text-center.bg-gray-50(x-show.transition = "open" @click.away="open = false")
+                      li.bg-gray-500.my-1.p-1
+                        a.block.h-full.w-full.px-2.py-1(class='hover:bg-yellow-300' href="#categorias") Categorias
+                      li.bg-gray-500.my-1.p-1
+                        a.block.h-full.w-full.px-2.py-1(class='hover:bg-yellow-300' href="#categorias") New Arrivals
+                      li.bg-gray-500.my-1.p-1
+                        a.block.h-full.w-full.px-2.py-1(class='hover:bg-yellow-300' href="#categorias") Disposible Devices 
+                      li.bg-gray-500.my-1.p-1
+                        a.block.h-full.w-full.px-2.py-1(class='hover:bg-yellow-300' href="#categorias") Giveaway&amp;Sales
                         
                 .w-full.col-start-2.col-end-3(class='md:bg-yellow md:col-start-1 md:col-end-2 text-center md:row-start-1')
                     h1.text-2xl.font-bold 
                       a(href="/" title="Home") ChimpaVape 😃
                 .w-full.col-start-3.col-end-4(class='bg-yellow md:col-start-5 md:col-end-6 relative text-center pr-2 md:row-start-1')
-                    button
+                    button(@click="open")
                       svg#Capa_1.h-4.w-4.fill-current(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' viewBox='0 0 56.966 56.966' style='enable-background:new 0 0 56.966 56.966;' xml:space='preserve' width='512px' height='512px')
                         path(d='M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z')
-                .w-full.col-span-3.row-span-2(class='md:w-1/3 bg-yellow relative text-center pr-2 md:col-start-2 md:col-end-5 md:col-span-3 md:row-start-1')
-                    input.w-full.bg-white.h-10.px-5.pr-10.rounded-full.text-sm(type='search' name='serch' placeholder='Search' class='focus:outline-none')
+                .w-full.col-span-3.row-span-2(class='bg-yellow relative text-center pr-2 md:col-start-2 md:col-end-5 md:col-span-3 md:row-start-1')
+                    input.w-full.bg-white.h-10.px-5.pr-10.rounded-full.text-sm(type='search' name='serch' placeholder='Escriba quí y pulse enter' class='focus:outline-none')
 
                 .w-full.flex.justify-center(class='md:w-1/3 hidden')
                     svg.box-border.p-1.border-2.rounded-full.h-8.w-8(xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor')
